@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
-import '../../functions/GetX Dialog Alert_Func.dart';
+import '../../functions/GetX_Dialog_Alert_Function/GetX Dialog Alert_Func.dart';
 
 class GetX_Dialog_Alert extends StatefulWidget {
   const GetX_Dialog_Alert({super.key});
