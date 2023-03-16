@@ -24,6 +24,7 @@ class _GetX_Dialog_AlertState extends State<GetX_Dialog_Alert> {
         color: Colors.blue,
         child: Column(
           children: [
+
             Padding(
               padding: EdgeInsets.only(left: 5, right: 5, top: 5),
               child: Card(
@@ -40,6 +41,7 @@ class _GetX_Dialog_AlertState extends State<GetX_Dialog_Alert> {
                 ),
               ),
             ),
+            
             Padding(
               padding: EdgeInsets.only(left: 5, right: 5, top: 5),
               child: Card(

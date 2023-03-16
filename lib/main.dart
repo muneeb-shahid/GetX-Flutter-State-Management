@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/view/Dark%20theme%20Light%20theme/GetX%20Dark%20theme%20Light%20theme.dart';
 import 'package:getx/view/Dialog%20Alert/getX_Dialog_Alert.dart';
 import 'package:getx/view/SnackBar/getX_SnackBar.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
        
         primarySwatch: Colors.blue,
       ),
-      home: GetX_Dialog_Alert(),
+      home: Dark_theme_Light_theme(),
     );
   }
 }
