@@ -3,28 +3,29 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
-class ScreenTwo extends StatefulWidget {
-  const ScreenTwo({super.key});
+class ScreenOne extends StatefulWidget {
+   ScreenOne({super.key, });
 
   @override
-  State<ScreenTwo> createState() => _ScreenTwoState();
+  State<ScreenOne> createState() => _ScreenOneState();
 }
 
-class _ScreenTwoState extends State<ScreenTwo> {
+class _ScreenOneState extends State<ScreenOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Screen Two"),
+        title: Text("Screen One" ),
         centerTitle: true,
       ),
       body: Container(
-        color: Colors.red,
         child: Column(
           children: [
-             ElevatedButton(
+            ElevatedButton(
                 onPressed: () {
-                  // Get.toNamed("/GetX_SnackBar");
+                  Get.toNamed("/ScreenTwo",arguments: [
+                    "Muneeb"
+                  ]);
                 },
                 child: Text("Go to next page")),
           ],
