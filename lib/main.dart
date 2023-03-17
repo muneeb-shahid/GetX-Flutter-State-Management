@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/view/CounterApp/counterapp.dart';
 import 'package:getx/view/Dark%20theme%20Light%20theme/GetX%20Dark%20theme%20Light%20theme.dart';
 import 'package:getx/view/Dialog%20Alert/getX_Dialog_Alert.dart';
 import 'package:getx/view/Routes,Navigations%20and%20data%20pass/ScreenOne.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: GetX_Dialog_Alert(),
+      home: CounterApp(),
       getPages: [
         GetPage(name: '/', page: () => GetX_SnackBar()),
         GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         
         ),
         GetPage(name: "/ScreenTwo", page: () => ScreenTwo(),),
+        GetPage(name: "/CounterApp", page: () => CounterApp(),)
       ],
     );
   }
