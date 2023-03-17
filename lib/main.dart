@@ -7,6 +7,8 @@ import 'package:getx/view/Routes,Navigations%20and%20data%20pass/ScreenOne.dart'
 import 'package:getx/view/Routes,Navigations%20and%20data%20pass/ScreenTwo.dart';
 import 'package:getx/view/SnackBar/getX_SnackBar.dart';
 
+import 'view/Slider/slider.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CounterApp(),
+      home: Slider_App(),
       getPages: [
         GetPage(name: '/', page: () => GetX_SnackBar()),
         GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
@@ -35,7 +37,8 @@ class MyApp extends StatelessWidget {
         
         ),
         GetPage(name: "/ScreenTwo", page: () => ScreenTwo(),),
-        GetPage(name: "/CounterApp", page: () => CounterApp(),)
+        GetPage(name: "/CounterApp", page: () => CounterApp(),),
+        GetPage(name: "/Slider_App", page: () => Slider_App(),)
       ],
     );
   }
