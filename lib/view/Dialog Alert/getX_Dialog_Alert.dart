@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../../functions/GetX_Dialog_Alert_Function/GetX Dialog Alert_Func.dart';
 
 class GetX_Dialog_Alert extends StatefulWidget {
-  const GetX_Dialog_Alert({super.key});
+  GetX_Dialog_Alert({super.key});
 
   @override
   State<GetX_Dialog_Alert> createState() => _GetX_Dialog_AlertState();
@@ -15,16 +15,19 @@ class GetX_Dialog_Alert extends StatefulWidget {
 class _GetX_Dialog_AlertState extends State<GetX_Dialog_Alert> {
   @override
   Widget build(BuildContext context) {
+    var heightt = MediaQuery.of(context).size.height * 1;
+    var widthh = MediaQuery.of(context).size.width * 1;
     return Scaffold(
       appBar: AppBar(
         title: Text("GetX Dialog Alert"),
         centerTitle: true,
       ),
       body: Container(
+        height: heightt * .4,
+        width: widthh * .4,
         color: Colors.blue,
         child: Column(
           children: [
-
             Padding(
               padding: EdgeInsets.only(left: 5, right: 5, top: 5),
               child: Card(
@@ -41,7 +44,6 @@ class _GetX_Dialog_AlertState extends State<GetX_Dialog_Alert> {
                 ),
               ),
             ),
-            
             Padding(
               padding: EdgeInsets.only(left: 5, right: 5, top: 5),
               child: Card(
