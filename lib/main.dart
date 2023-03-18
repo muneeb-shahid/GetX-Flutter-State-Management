@@ -10,6 +10,7 @@ import 'package:getx/view/Switch%20Button/switchbutton.dart';
 
 import 'controller/Switch Button/SwitchButtonController.dart';
 import 'view/Slider/slider.dart';
+import 'view/favourite/favourite.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SwitchButton(),
+      home: Favourite(),
       getPages: [
         GetPage(name: '/', page: () => GetX_SnackBar()),
         GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/CounterApp", page: () => CounterApp(),),
         GetPage(name: "/Slider_App", page: () => Slider_App(),),
         GetPage(name: "/SwitchButton", page: () => SwitchButton()),
+        GetPage(name: "/Favourite", page: () =>Favourite())
       ],
     );
   }

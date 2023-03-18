@@ -11,6 +11,4 @@ class SwitchButtonController extends GetxController {
         ? Get.changeTheme(ThemeData.light())
         : Get.changeTheme(ThemeData.dark());
   }
-
-  
 }
