@@ -33,7 +33,7 @@ class _FavouriteState extends State<Favourite> {
                             : Colors.black),
                     onTap: () {
                       _favouriteController.Empty_Fruits.contains(
-                              _favouriteController.fruits[index].toString())
+                          _favouriteController.fruits[index].toString())
                           ? _favouriteController.removeFromFavourite(
                               _favouriteController.fruits[index].toString())
                           : _favouriteController.addToFavourite(
