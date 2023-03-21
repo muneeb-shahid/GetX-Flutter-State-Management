@@ -38,31 +38,34 @@ class LoginView extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            GestureDetector(
-              onTap: () {
-                _login_Controller.loginAPI();
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: Container(
-                  height: MediaQuery.of(context).size.height * 0.06,
-                  width: MediaQuery.of(context).size.width * 0.50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Constants_Colors.green_color,
+            Obx(() {
+              return GestureDetector(
+                onTap: () {
+                  _login_Controller.loginAPI();
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.06,
+                    width: MediaQuery.of(context).size.width * 0.50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Constants_Colors.green_color,
+                    ),
+                    child: _login_Controller.loading.value? CircularProgressIndicator():  
+                    Center(
+                        child: Text(
+                      'Login',
+                      style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
+                          color: Constants_Colors.White_Color),
+                    )),
                   ),
-                  child: Center(
-                      child: Text(
-                    'Login',
-                    style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                        color: Constants_Colors.White_Color),
-                  )),
                 ),
-              ),
-            ),
+              );
+            })
           ],
         ),
       ),
