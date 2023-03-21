@@ -23,14 +23,19 @@ class LoginView extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: TextField(
+              child: TextFormField(
+                
                 controller: _login_Controller.emailController.value,
-                decoration: InputDecoration(hintText: 'Email'),
+                
+                decoration: InputDecoration(
+                  
+                  hintText: 'Email'),
               ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: TextField(
+              child: TextFormField(
+                
                 controller: _login_Controller.passwordController.value,
                 decoration: InputDecoration(hintText: 'Password'),
               ),
@@ -43,7 +48,7 @@ class LoginView extends StatelessWidget {
                 onTap: () {
                   _login_Controller.loginAPI();
                 },
-                child: Padding(
+                child: _login_Controller.loading.value? CircularProgressIndicator():  Padding(
                   padding: EdgeInsets.only(left: 20, right: 20),
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.06,
@@ -52,7 +57,7 @@ class LoginView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       color: Constants_Colors.green_color,
                     ),
-                    child: _login_Controller.loading.value? CircularProgressIndicator():  
+                    child: 
                     Center(
                         child: Text(
                       'Login',

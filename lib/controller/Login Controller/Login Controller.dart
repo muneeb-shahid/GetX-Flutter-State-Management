@@ -39,4 +39,6 @@ class Login_Controller extends GetxController {
       Get.snackbar("Exception", e.toString());
     }
   }
+
+
 }
