@@ -4,6 +4,7 @@ import 'package:getx/view/CounterApp/counterapp.dart';
 import 'package:getx/view/Dark%20theme%20Light%20theme/GetX%20Dark%20theme%20Light%20theme.dart';
 import 'package:getx/view/Dialog%20Alert/getX_Dialog_Alert.dart';
 import 'package:getx/view/ImagePicker/ImagePicker.dart';
+import 'package:getx/view/Login/Login%20.dart';
 import 'package:getx/view/Routes,Navigations%20and%20data%20pass/ScreenOne.dart';
 import 'package:getx/view/Routes,Navigations%20and%20data%20pass/ScreenTwo.dart';
 import 'package:getx/view/SnackBar/getX_SnackBar.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ImagePicker(),
+      home: LoginView(),
       getPages: [
         GetPage(name: '/', page: () => GetX_SnackBar()),
         GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
