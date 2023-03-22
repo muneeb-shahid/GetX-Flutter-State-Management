@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/view/App%20Exception/AppException.dart';
 import 'package:getx/view/CounterApp/counterapp.dart';
 import 'package:getx/view/Dark%20theme%20Light%20theme/GetX%20Dark%20theme%20Light%20theme.dart';
 import 'package:getx/view/Dialog%20Alert/getX_Dialog_Alert.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginView(),
+      home: AppException(),
       getPages: [
         GetPage(name: '/', page: () => GetX_SnackBar()),
         GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
