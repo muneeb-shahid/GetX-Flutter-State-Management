@@ -22,3 +22,9 @@ class RequestTimeOut extends App_Exception {
 class ServerException extends App_Exception {
   ServerException([String? message]) : super(message, 'Server Exception');
 }
+class InternalServerErrorException extends App_Exception {
+  InternalServerErrorException([String? message]) : super(message, 'Internal Server Error Exception');
+}
+class ServiceUnavailable extends App_Exception {
+  ServiceUnavailable([String? message]) : super(message, 'Service Unavailable ');
+}
