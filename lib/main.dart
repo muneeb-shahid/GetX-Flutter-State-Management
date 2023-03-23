@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: AppException(),
-      getPages: AppRoutes.appRoutes()
+      // getPages: AppRoutes.appRoutes()
       //   GetPage(name: '/', page: () => GetX_SnackBar()),
       //   GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
       //   GetPage(
