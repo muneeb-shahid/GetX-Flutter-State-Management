@@ -26,29 +26,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      // home: AppException(),
-      // getPages: AppRoutes.appRoutes()
-      //   GetPage(name: '/', page: () => GetX_SnackBar()),
-      //   GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
-      //   GetPage(
-      //     name: "/Dark_theme_Light_theme",
-      //     page: () => Dark_theme_Light_theme(),
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        // home: AppException(),
+        getPages: AppRoutes.appRoutes()
+        //   GetPage(name: '/', page: () => GetX_SnackBar()),
+        //   GetPage(name: '/GetX_Dialog_Alert', page: () => GetX_Dialog_Alert()),
+        //   GetPage(
+        //     name: "/Dark_theme_Light_theme",
+        //     page: () => Dark_theme_Light_theme(),
 
-      //   ),
-      //   GetPage(name: "/ScreenOne", page: () => ScreenOne(),
-        
-      //   ),
-      //   GetPage(name: "/ScreenTwo", page: () => ScreenTwo(),),
-      //   GetPage(name: "/CounterApp", page: () => CounterApp(),),
-      //   GetPage(name: "/Slider_App", page: () => Slider_App(),),
-      //   GetPage(name: "/SwitchButton", page: () => SwitchButton()),
-      //   GetPage(name: "/Favourite", page: () =>Favourite())
-      
-    );
+        //   ),
+        //   GetPage(name: "/ScreenOne", page: () => ScreenOne(),
+
+        //   ),
+        //   GetPage(name: "/ScreenTwo", page: () => ScreenTwo(),),
+        //   GetPage(name: "/CounterApp", page: () => CounterApp(),),
+        //   GetPage(name: "/Slider_App", page: () => Slider_App(),),
+        //   GetPage(name: "/SwitchButton", page: () => SwitchButton()),
+        //   GetPage(name: "/Favourite", page: () =>Favourite())
+
+        );
   }
 }
